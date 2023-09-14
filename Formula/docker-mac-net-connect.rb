@@ -12,6 +12,10 @@ class DockerMacNetConnect < Formula
   depends_on "go" => :build
 
   def install
+    if ENV["HOMEBREW_GOPROXY"]
+      ENV["GOPROXY"] = ENV["HOMEBREW_GOPROXY"]
+    end
+
     system "make", "VERSION=#{version}", "build-go"
     
     bin.install Dir["*"]
