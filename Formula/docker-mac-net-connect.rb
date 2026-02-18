@@ -4,9 +4,9 @@
 class DockerMacNetConnect < Formula
   desc "Connect directly to Docker-for-Mac containers via IP address 🐳 💻"
   homepage "https://github.com/chipmk/docker-mac-net-connect"
-  version "v0.1.6"
+  version "v0.1.7"
   url "https://github.com/chipmk/docker-mac-net-connect/archive/refs/tags/#{version}.tar.gz"
-  sha256 "14e84bc449c5aecbd0323607fe5dc19904efe2b9fc4df903641df86db79481ab"
+  sha256 "2dc0af88fb04b7b43680c8e86a1d5ed39ed91e4316b975d4ff335045122ada64"
   license "MIT"
 
   depends_on "go" => :build
